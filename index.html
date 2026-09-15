@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syauqi Dhiaulhaq - CV & Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #e2e8f0;
+            --text-main: #2d3748;
+            --text-light: #4a5568;
+            --bg-color: #f7fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: white;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            background-color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-badges {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+        }
+
+        .contact-badges a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Content Sections */
+        section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 5%;
+        }
+
+        h3.section-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h3.section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 10px auto 0;
+        }
+
+        p.about-text {
+            text-align: justify;
+            color: var(--text-light);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* Timeline Cards (Experience & Education) */
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .card-title h4 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+        }
+
+        .card-title h5 {
+            color: var(--text-light);
+            font-size: 1rem;
+            font-weight: 500;
+            margin-top: 0.2rem;
+        }
+
+        .date-badge {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .card ul {
+            margin-left: 1.5rem;
+            color: var(--text-light);
+        }
+
+        .card ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .card-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <!-- Pastikan foto profil Anda bernama 'profile.jpg' dan berada di folder yang sama dengan file ini -->
+        <img src="profile.jpg" alt="Syauqi Dhiaulhaq" class="profile-img">
+        <h1>SYAUQI DHIAULHAQ</h1>
+        <h2>Accounting Student & Financial Management Practitioner</h2>
+        <div class="contact-badges">
+            <span>📍 Bekasi City, Indonesia</span>
+            <span>📱 <a href="tel:081994034165">081994034165</a></span>
+            <span>✉️ <a href="mailto:syauqidhiaulhaq05@gmail.com">syauqidhiaulhaq05@gmail.com</a></span>
+        </div>
+    </header>
+
+    <section id="about">
+        <h3 class="section-title">About Me</h3>
+        <p class="about-text">
+            An active Bachelor's degree student in Accounting (Class of 2023) with strong dedication and a solid understanding of financial accounting cycles, comprehensive financial reporting, and risk management. Possesses practical experience as an internal accountant in a micro-scale business, managing cash flow, recording daily journal entries, and preparing income statements. Proficient in conducting macroeconomic and microeconomic fundamental analysis, highly skilled in using Microsoft Excel for financial data processing, and capable of working collaboratively within a team.
+        </p>
+    </section>
+
+    <section id="experience">
+        <h3 class="section-title">Work Experience</h3>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <h4>Internal Accountant & Financial Manager</h4>
+                    <h5>Coffee Shop Partnership Business (Co-Founder)</h5>
+                </div>
+                <div class="date-badge">Dec 2022 - Jul 2023</div>
+            </div>
+            <ul>
+                <li>Processed and recorded daily financial transactions, including accounts payable, accounts receivable, operational expenses, and general journal entries with a high level of accuracy.</li>
+                <li>Prepared and compiled monthly financial reports, including simple balance sheets and income statements, to ensure transparency of capital among business partners.</li>
+                <li>Managed and maintained financial documentation and transaction records in a systematic and organized manner to facilitate monthly evaluations.</li>
+                <li>Made strategic financial decisions based on operational cash flow data, successfully optimizing cost allocation and maintaining business liquidity.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <h4>Independent Portfolio Manager & Analyst</h4>
+                    <h5>Independent Financial Portfolio Management</h5>
+                </div>
+                <div class="date-badge">2025 - Present</div>
+            </div>
+            <ul>
+                <li>Managed a personal multi-asset portfolio independently through strategic allocation of funds across liquid and non-liquid instruments (stocks, commodities, and cryptocurrencies) based on measurable risk profiles.</li>
+                <li>Conducted regular fundamental analysis by reviewing corporate financial statements and monitoring macroeconomic and microeconomic developments to mitigate market volatility risks.</li>
+                <li>Applied technical analysis techniques, including trend identification and supply-demand zone analysis, to execute asset placements at optimal price levels.</li>
+                <li>Performed periodic reconciliations between personal capital allocation records and actual balances across various financial instrument platforms.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h3 class="section-title">Education</h3>
+        
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <h4>Muhammadiyah University of Surakarta</h4>
+                    <h5>Bachelor's Degree in Accounting</h5>
+                </div>
+                <div class="date-badge">2023 - Present</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <h4>State Senior High School 12 Bekasi City</h4>
+                </div>
+                <div class="date-badge">2020 - 2023</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Syauqi Dhiaulhaq. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
